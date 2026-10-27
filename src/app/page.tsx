@@ -165,7 +165,7 @@ export default function AnalyticsPage() {
           <CardHeader className="text-center space-y-3">
             <div className="flex justify-center">
               <img
-                src="/spokum-logo.jpg"
+                src="/spokum-analytics/spokum-logo.jpg"
                 alt="СпокУм"
                 className="w-20 h-20 rounded-2xl object-cover"
               />
@@ -228,7 +228,7 @@ export default function AnalyticsPage() {
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between flex-wrap gap-3">
           <div className="flex items-center gap-3">
             <img
-              src="/spokum-logo.jpg"
+              src="/spokum-analytics/spokum-logo.jpg"
               alt="СпокУм"
               className="w-12 h-12 rounded-xl object-cover"
             />
@@ -527,7 +527,7 @@ export default function AnalyticsPage() {
               {/* Header */}
               <div style={{ display: 'flex', alignItems: 'center', gap: '24px', marginBottom: '40px' }}>
                 <img
-                  src="/spokum-logo.jpg"
+                  src="/spokum-analytics/spokum-logo.jpg"
                   alt="СпокУм"
                   style={{ width: '80px', height: '80px', borderRadius: '20px', objectFit: 'cover' }}
                 />

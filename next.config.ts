@@ -7,6 +7,8 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
   reactStrictMode: false,
+  basePath: "/spokum-analytics",
+  trailingSlash: true,
 };
 
 export default nextConfig;
