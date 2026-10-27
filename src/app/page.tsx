@@ -1,5 +1,7 @@
 'use client'
 
+import { fetchAnalytics } from "@/lib/analytics"
+
 import { useState, useEffect, useRef } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -74,9 +76,8 @@ export default function AnalyticsPage() {
     setLoading(true)
     setError('')
     try {
-      const res = await fetch(`/api/analytics?pwd=${encodeURIComponent(pwd)}`)
-      const json = await res.json()
-      if (!res.ok) throw new Error(json.error || 'Ошибка')
+      const json = await fetchAnalytics()
+      if (!json.stats) throw new Error('Нет данных')
       setData(json)
       setAuthed(true)
       // Save password in state for refresh
